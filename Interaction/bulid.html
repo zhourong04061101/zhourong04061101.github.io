@@ -1,0 +1,179 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>商翔互动吧-新建活动</title>
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <script src="js/vendor/modernizr.js"></script>
+	<script type="text/javascript" src="js/laydates/laydate.js"></script>
+</head>
+
+<body>
+  <div class="container-header">
+    <div class="row">
+      <div class="large-4 medium-4 small-12 columns" style="margin-top:0;">
+        <a href="index.html">
+          <div id="logo">
+
+            <img src="images/logo.png" alt="Conmpany Name" width="200">
+
+          </div>
+        </a>
+      </div>
+      <nav class="top-bar" data-topbar role="navigation">
+        <section class="top-bar-section">
+          <a href="http://act.sumsoar.com/Admin/index/login">+ 新建活动</a>
+          <!-- Right Nav Section -->
+        </section>
+      </nav>
+    </div>
+  </div>
+  <div class="container-content" style="background:#f5f5f5;">
+    <div class="row">
+    	 <div class="large-12 content_newly">
+         	<h2>基本信息</h2>
+            <div class="col_a">
+            	<label>活动主题：</label>
+                <input type="text" placeholder="请输入活动主题" />
+            </div>
+            <div class="col_a">
+              <label style="float:left;">活动海报：</label>
+              <div class="posterimg" onclick="posterImg()">
+                <span></span>
+                <input type="file" class="clickFile" />
+               
+              </div>
+             <samp>建议尺寸：750*400px</samp>
+               
+            </div>
+             <div class="col_a">
+            	<label>活动时间：</label>
+                <input type="text" style="width:16.5%;" id="starttime"/> <input type="text" style="width:16.5%;" id="startmin"/>
+                <label>至：</label>
+                <input type="text"  style="width:16.5%;"  id="endtime"/>
+                <input type="text"  style="width:16.5%;"  id="endmin"/>
+            </div>
+            <div class="col_a">
+            	<label>活动票种：</label>
+              
+                <a href="javascript: void (0);" data-repeat-rendered="item_callback" class="select selected">
+                  <span class="ticket_des"> 默认免费票</span>
+                </a>
+              
+            </div>
+            <div class="col_a">
+            	<label style="float:left;">活动地址：</label>
+                <div id="case3" class="mapMarkspan bMap">
+                  <!-- <i class="mark-no">标记位置</i> -->
+                </div>
+            </div>
+             <div class="col_a">
+            	<label style="float:left;">活动详情：</label>
+               <textarea></textarea>
+            </div>
+            
+         </div>
+         <div class="large-12 content_newly">
+          <h2 class="level2">表单信息</h2>
+           <div class="col_a">
+             <label>姓名：</label>
+               <input type="text" placeholder="请输入姓名" />
+           </div>
+           <div class="col_a">
+             <label>手机：</label>
+               <input type="text" placeholder="请输入手机号码" />
+           </div>
+           
+           
+        </div>
+        <div class="buttonArea">
+          <button>存为草稿</button>
+          <button class="publish">发布</button>
+        </div>
+        
+    </div>
+
+  </div>
+  <div class="footer-sec">
+    <div class="row">
+      <div class="large-12 medium-12 small-12 columns">
+        <div class="foot-1">
+          <h4>相关网站 </h4>
+          <ul>
+            <li>
+              <a href="http://www.sumsoartech.com/" title="网络科技官网" target="_blank">网络科技</a>
+            </li>
+            <li>
+              <a href="http://www.sumsoar.com/" title="商翔官网" target="_blank">商翔官网</a>
+            </li>
+            <li>
+              <a href="http://www.shangxiangchina.com/" title="商翔通" target="_blank">商翔通</a>
+            </li>
+            <li>
+              <a href="http://ts.judatong.com/login" title="退税系统" target="_blank">退税系统</a>
+            </li>
+            <li>
+              <a href="http://customs.judatong.com/public/" title="报关系统" target="_blank">报关系统</a>
+            </li>
+            <li>
+              <a href="http://www.sumsoarbest.com/" title="商翔优选" target="_blank">商翔优选</a>
+            </li>
+            <li>
+              <a href="http://shop.sumsoarbest.com/" title="优选商城" target="_blank">优选商城</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy">
+    <div class="row">
+      <div class="large-12 columns">
+        Copyright &copy; 2018 浙江商翔网络科技股份有限公司.
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=kzkpedNQHx065s8eNZnS1I7DVSBl9Sbr&s=1"></script>
+  <script src="js/vendor/jquery.js"></script>
+	<script type="text/javascript" src="js/map.jquery.min.js"></script>
+
+
+  <script>
+    //执行一个laydate实例
+    laydate.render({
+      elem: '#starttime' //指定元素
+    });
+    //执行一个laydate实例
+    laydate.render({
+      elem: '#startmin' //指定元素
+      ,type: 'time'
+      ,format: 'H点M分'
+    });
+    laydate.render({
+      elem: '#endtime' //指定元素
+    });
+    //执行一个laydate实例
+    laydate.render({
+      elem: '#endmin' //指定元素
+      ,type: 'time'
+      ,format: 'H点M分'
+    });
+    </script>
+  <script>
+    $(function(){
+      // $("#case1").bMap();
+      // $("#case2").bMap({name:"address",address:"绵阳金家林软件园奥锐恩达教育科技有限公司"});
+      $("#case3").bMap({name:"callback",callback:function(address,point){
+        $("#callback").html("您选择的地址是:"+JSON.stringify(address))
+      }});
+    })
+  </script>
+</body>
+
+</html>

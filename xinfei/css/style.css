@@ -1,0 +1,143 @@
+body.no-scroll{
+	overflow:hidden;
+}
+._section{
+	width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.coordinate{
+	background-color: #fff;
+    margin-bottom: 62px;
+    float: left;
+    width: 282px;
+    height: 260px;
+    text-align: center;
+    position: relative;
+        margin-right: 16px;
+}
+.midnight-blue{
+	float: left;
+    width: 100%;
+}
+.coordinate>h3{
+	color: #c52d2f;
+    margin: 0;
+    font-size: 1.4em;
+    font-family: 'Helvetica Neue', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Microsoft Yahei', sans-serif;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.coordinate>p{
+	margin: 1em 0 0;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8em;
+    font-weight: 300;
+       margin-left: 32px;
+    margin-right: 25px;
+}
+.coordinate>img{
+	position: absolute;
+    top: -38px;
+    left: 37%;
+}
+@media only screen and (max-width: 768px) {
+.coordinate{
+	float:none;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+._section {
+    width: initial;
+    margin-left: initial;
+    margin-right: initial;
+}
+.coordinate>img{margin-top: -39px;position: initial;top:0;left:0}
+.coordinate {
+	width:auto;
+}
+.icon {
+    height: 27px !important;
+}
+}
+@media only screen and (min-width: 769px) and (max-width:1200px) {
+._section {
+    width: 600px;
+}
+}	
+@media only screen and (min-width: 1200px) {
+	._section {
+	    width: 1200px;
+	}	
+}
+
+/*招聘详细查看*/
+.job-detial-shade{
+	display:none;
+	z-index:98;
+	position:fixed;
+	width:100%;
+	height:100%;
+	background:RGBA(0,0,0,.5);
+}
+.jobs-detial{
+	display:none;
+	z-index:99;
+	position:fixed;
+	top:0px;
+	right:0px;
+	left:0px;
+	bottom:0px;
+	margin:auto;
+	padding:65px 0 0;
+	width:60%;
+	height:75%;
+	border-radius:8px;
+	background-color:#fff;
+	overflow-y:auto;
+	
+}
+.jobs-detial>.head{
+	margin:-65px 0 0;
+	padding:0 20px;
+	width:100%;
+	height:65px;
+}
+.jobs-detial>.head>.jobs-name{
+	width:100%;
+	height:45px;
+	font-size:24px;
+	color:#000;
+    text-align:center;
+    line-height:60px;
+}
+.work-experience{
+	padding:0 10px 0 0; 
+	width:100%;
+	height:20px;
+	font-size:14px;
+	color:#757575;
+	text-align:right;
+	line-height:20px;
+	border-bottom:1px solid #aaa;
+}
+.jobs-detial-content{
+	padding:20px;
+	widht:100%;
+	height:100%;
+	overflow-y:auto;
+}
+.jobs-detial-content dt{
+	margin-bottom:5px;
+}
+.jobs-detial-content dd{
+	margin-bottom:3px;
+}
+.recent-work-inner .work-detial{
+	display:none;
+}
+.recent-work-inner>p{
+	cursor:pointer;
+}
