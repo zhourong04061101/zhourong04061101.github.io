@@ -285,7 +285,7 @@ iframe{width:100%;frameborder:0;}
 	, .postMeta, .blContinue, .postSingle, .sidebar, .mainNav li a , .ctl a, a.latestBtn, .caption p
 	, .prc h3,  .feedInner h3
 	, .teaserMsg h1, .projTitle p, a.btnLaunch, .stp h3, .postTitleL p,.stTitle p, .mainNavSingle li a {
-			-webkit-text-stroke: 0.30px;
+			-webkit-text-stroke: 0.20px;
 	}
 	
 	
