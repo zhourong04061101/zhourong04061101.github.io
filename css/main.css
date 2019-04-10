@@ -768,7 +768,7 @@ h1.prfTitle span {
 }
 
 
-.skills  .smallIntro p {
+.smallIntro p {
     color: #999999; font-size: 16px;
     line-height: 28px;
     padding: 0 260px;
@@ -1002,7 +1002,7 @@ ul#category li a {
     -moz-transform: scale(1.2)  ;
 	-webkit-transform: scale(1.2) ;
 	-o-transform: scale(1.2)  ;
-	.transform: scale(1.2) ;
+	transform: scale(1.2) ;
 	
 }
 
@@ -2145,7 +2145,7 @@ ul#category li a {
 	.buyLink a{float:none;margin-top:20px;}
 	.ftLogo img{width:35%;}
 	.feedInner:before{left:20px;}
-	ul#category li {display: block;margin-bottom: 15px;margin-right:0;}
+	ul#category li {margin-bottom: 15px;margin-right:0;}
 	.prj, .prjSlider{margin-bottom:20px !important;}
 	.container .stp {margin-bottom: 40px;}
 	.container .stp:last-child {margin-bottom: 0;}

@@ -125,6 +125,8 @@
         .container .offset-by-thirteen              { padding-left: 624px; }
         .container .offset-by-fourteen              { padding-left: 672px; }
         .container .offset-by-fifteen               { padding-left: 720px; }
+        .bigTitle img{ top:32%;}
+        .bgGreenDark{ padding: 1em 0 10em 0;}
     }
 
 
@@ -174,7 +176,9 @@
         .container .offset-by-thirteen,
         .container .offset-by-fourteen,
         .container .offset-by-fifteen { padding-left: 0; }
-		.biginside{ width:100%;}
+        .biginside{ width:100%;}
+        .bigTitle img{ top:29%;}
+        .bgGreenDark{ padding: 1em 0 10em 0;}
     }
 
 
@@ -207,6 +211,8 @@
         .container .sixteen.columns,
         .container .one-third.column,
         .container .two-thirds.column { width: 420px; }
+        .bigTitle img{ top:32%;}
+        .bgGreenDark{ padding: 1em 0 10em 0;}
     }
 
 

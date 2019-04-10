@@ -119,7 +119,7 @@ iframe{width:100%;frameborder:0;}
 	    left: 48.53%;
 	    padding: 3px 7px;
 	    position: absolute;
-	    top: 34%;
+	    top: 36%;
 	    width: 3%;
 	}
 	
@@ -139,7 +139,7 @@ iframe{width:100%;frameborder:0;}
 		padding:10px 20px;
 		position:relative;
 	}
-	
+	/* .bigTitle h1:before{    width: 3%; background: url(../images/star.png);} */
 	.bigTitle h1:after {
 	    background:#343434;
 	    content: "";
@@ -377,7 +377,7 @@ iframe{width:100%;frameborder:0;}
 		background-repeat: repeat-x,						repeat,					no-repeat;
 		background-size: 3200px 460px,					auto,					cover;
 		color: rgba(255, 255, 255, 0.8);
-		padding: 1em 0 20em 0;
+		padding: 1em 0 15em 0;
 		position: relative;
 		text-align: center;}
 	.secTitle.pricingTitle h1{color:#f4f4f4;}
@@ -395,3 +395,4 @@ iframe{width:100%;frameborder:0;}
     z-index: 0;
 }
 
+.experience span{ display: block; text-align: left; font-size: 15px; line-height: 30px; color: #333;}

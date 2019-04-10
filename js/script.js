@@ -14,20 +14,20 @@ $(document).ready(function(){
 
 	if (!(/android|blackberry|windows phone|iphone|ipod/i).test(navigator.userAgent.toLowerCase())) {
 
-		var header = $('.mainHeader'),
-			pos = header.offset();
+		// var header = $('.mainHeader'),
+		// 	pos = header.offset();
 
-			$(window).scroll(function(){
-				if($(this).scrollTop() > pos.top+20 && header.hasClass('default')){
-					header.fadeOut('fast', function(){
-						$(this).removeClass('default').addClass('switchedHeader').slideDown(200);
-					});
-				} else if($(this).scrollTop() <= pos.top+20 && header.hasClass('switchedHeader')){
-					header.slideUp(200, function(){
-						$(this).removeClass('switchedHeader').addClass('default').fadeIn(200);
-					});
-				}
-		});
+		// 	$(window).scroll(function(){
+		// 		if($(this).scrollTop() > pos.top+20 && header.hasClass('default')){
+		// 			header.fadeOut('fast', function(){
+		// 				$(this).removeClass('default').addClass('switchedHeader').slideDown(200);
+		// 			});
+		// 		} else if($(this).scrollTop() <= pos.top+20 && header.hasClass('switchedHeader')){
+		// 			header.slideUp(200, function(){
+		// 				$(this).removeClass('switchedHeader').addClass('default').fadeIn(200);
+		// 			});
+		// 		}
+		// });
 
 	}
 
@@ -288,27 +288,6 @@ $('#submit').click(function(){
 //---------------------------------- End form validation-----------------------------------------//
 
 
-//--------------------------------- Twitter feed --------------------------------//
-
-
-jQuery(".tweets").tweet({
-  join_text: false,
-  username: "BenaissaGhrib", // Change username here
-  modpath: './twitter/',
-  avatar_size: false,
-  count: 1,
-  auto_join_text_default: ' we said, ',
-  auto_join_text_ed: ' we ',
-  auto_join_text_ing: ' we were ',
-  auto_join_text_reply: ' we replied to ',
-  auto_join_text_url: ' we were checking out ',
-  loading_text: 'Loading tweets...'
-
-});
-
-
-
-//--------------------------------- End twitter feed --------------------------------//
 
 
 //--------------------------------- Random images-------------------------------//
