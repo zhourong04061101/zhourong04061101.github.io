@@ -1,2 +1,2 @@
-# personalData
-my data and web
+# personalWebsite
+my personal website
