@@ -77,7 +77,8 @@ a:hover {color:#e90000; text-decoration:none;}
 .nav li .nav_submenu li a:hover {color:#003366; text-decoration:underline;}
 
 .shopping {width:270px; height:26px; margin-top:30px; position:relative;}
-.shopping span { width:66px; height:19px; background:url(../images/bg_header.png) no-repeat 0 -23px; position:absolute; top:2px; left:5px;}
+/* .shopping span { width:66px; height:19px; background:url(../images/bg_header.png) no-repeat 0 -23px; position:absolute; top:2px; left:5px;} */
+.shopping span {padding: 5px 12px;font-size: 12px;  display:inline-block; border-radius:4px;color: #000; background:#f5f5f5; cursor: pointer;}
 .shopping .sales {padding:4px 8px 0 0; font-size:12px; height:14px; overflow:hidden;}
 .shopping .sales li a {color:#484848;}
 .shopping .sales li a:hover {color:#e90000;}
@@ -98,12 +99,15 @@ a:hover {color:#e90000; text-decoration:none;}
 
 
 
-.chash {width:230px; height:29px; line-height:29px; margin-top:5px; background:url(../images/bg_nav.png) no-repeat -201px -76px; display:block; position:relative; }
-.chash li {color:#111; font-size:12px; width:70px; height:26px; display:block; float:left; padding-left:43px; position:relative; cursor:pointer; z-index:20;}
-.chash li a { color:#fff;}
-
+.chash {width:230px; height:29px; line-height:29px; margin-top:5px; background:#ffeded; border-radius: 4px; display:block; position:relative; }
+.chash li {color:#333; font-size:12px; height:26px; display:block; float:left; padding-left:12px; position:relative; cursor:pointer; z-index:20;}
+.chash li a { color:#333; display: inline-block;}
+.chash li b{ padding: 0 5px; color: #c00;}
+.chash li.cash{float: right; margin-right: 15px;}
+.chash li.cash img{ transform: rotate(-90deg); vertical-align: middle; margin-left: 5px; margin-bottom: 3px;}
+.chash li img{ vertical-align: text-bottom; margin-right: 5px;}
 .chash li:hover .car {display:block;}
-.chash li .car {width:290px; height:31px; line-height:33px; background:#fffae0; position:absolute; top:26px; left:-72px; border:2px solid #cc0000; display:none; cursor:pointer;}
+.chash li .car {width:290px; height:31px; line-height:33px; background:#fffae0; position:absolute; top:26px; left:-60px; border:2px solid #cc0000; display:none; cursor:pointer;}
 .chash li .car li {float:left; white-space:nowrap; padding-left:19px; color:#8e6f55;}
 /* 底部栏开始 */
 .footer{ width: 100%; border-top: 1px solid #ececec; margin-top: 14px;}
